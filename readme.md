@@ -9,8 +9,11 @@ I've been passively looking for an apartment in San Francisco for the past few m
 
 I wrote about this project (link coming soon!) in case you'd like a deeper look.
 
+Note: this requires Python 3.6+
+
 # Setup and Configuration
 * Clone this repo
+* `pip install requirement.txt`
 * Make a copy of `config_example.py` and rename it to `config.py`
 * Edit `config.py` to include your Mapbox API key and Discord webhook URL
 * Modify `settings.py` to update the settings for your search
