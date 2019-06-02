@@ -4,7 +4,7 @@
 
 I've been passively looking for an apartment in San Francisco for the past few months and decided to kick my search into high gear by automating it! This set of scripts:
 * Automatically searches Craigslist for new apartment listings based on a specified price range and apartment size
-* Uses the (Mapbox)[https://www.mapbox.com] API to generate a nice map based on the listing geodata
+* Uses the [Mapbox](https://www.mapbox.com) API to generate a nice map based on the listing geodata
 * Integrates with [Discord](https://discordapp.com/) to send notifications for apartment listings that meet specified criteria
 
 I wrote about this project (link coming soon!) in case you'd like a deeper look.
