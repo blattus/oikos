@@ -24,3 +24,6 @@ When run once, `oikos.py` will search Craiglist for apartment listings and post 
 # TODO:
 - [ ] [maybe] add some directions for hosting on Heroku or DigitalOcean
 - [ ] document setting up the cron job
+
+# License
+Open source under the [MIT License](LICENSE.md)
