@@ -13,7 +13,7 @@ Note: this requires Python 3.6+
 
 # Setup and Configuration
 * Clone this repo
-* `pip install requirement.txt`
+* `pip install requirements.txt`
 * Make a copy of `config_example.py` and rename it to `config.py`
 * Edit `config.py` to include your Mapbox API key and Discord webhook URL
 * Modify `settings.py` to update the settings for your search
