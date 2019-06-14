@@ -86,9 +86,6 @@ def main():
 		listing['latitude'] = result['geotag'][0]
 		listing['longitude'] = result['geotag'][1]
 
-		# get the map image from Mapbox
-		listing['map_image'] = get_map(listing['latitude'],listing['longitude'])
-
 		# decide if we want to notify about this listing
 		# https://stackoverflow.com/questions/2783969/compare-string-with-all-values-in-array
 		if any(x in listing['neighborhood'] for x in settings.neighborhood_blacklist):
@@ -103,6 +100,11 @@ def main():
 		# otherwise we should save the listing and notify if applicable
 		else:
 			log.info('{} looks like a new listing, processing'.format('craigslist_id'))
+
+			# get the map image from Mapbox
+			# we do this here instead of above to limit the number of API requests made to Mapbox
+			listing['map_image'] = get_map(listing['latitude'],listing['longitude'])
+
 			database.insert_record(listing)
 			if notify is True:
 				send_notification(listing)
