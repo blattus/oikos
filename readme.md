@@ -7,7 +7,7 @@ I've been passively looking for an apartment in San Francisco for the past few m
 * Uses the [Mapbox](https://www.mapbox.com) API to generate a nice map based on the listing geodata
 * Integrates with [Discord](https://discordapp.com/) to send notifications for apartment listings that meet specified criteria
 
-I wrote about this project (link coming soon!) in case you'd like a deeper look.
+I [wrote about this project](https://roshansadanani.com/posts/automating-apartment-hunting) in case you'd like a deeper look.
 
 Note: this requires Python 3.6+
 
